@@ -1,10 +1,22 @@
-import './App.css';
+//import './App.css';
+import Header from "./Header.js";
+import Main from "./Main";
+import Footer from "./Footer";
+import Nav from "./Nav";
+import React,{Fragment} from "react";
 
 function App() {
   return (
-    <div className="App">
+    <Fragment>
+    <Header className="header"/>
+    <Nav></Nav>
+      <Main>
       <p>This is my Capstone PRoject For my coursera certification. </p>
-    </div>
+      </Main>
+      <Footer>
+        © 2023 | Muhammad Jawad khan
+      </Footer>
+    </Fragment>
   );
 }
 
